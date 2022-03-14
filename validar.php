@@ -8,7 +8,6 @@
 
 </head>
 <body>
-(preg_match('/[^a-zA-Z\\s]/', $_GET["nom"])
 <?php if (!$correcte) {
     echo '<h2 class="error">Formulari incorrecte</h2>';
 } ?>
