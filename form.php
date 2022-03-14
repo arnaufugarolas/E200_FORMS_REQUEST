@@ -6,10 +6,10 @@
 </head>
 <body>
 
-<form id="index" name="form" method="get" action="form.php">
+<form id="index" name="form" method="get" action="validar.php">
     <div>
-        <label for="form_user">Nom</label>
-        <input type="text" name="nom" id="form_nom" required readonly value="<?php echo (isset($_GET["nom"]))?$_GET["nom"]:'';?>">
+        <label for="form_nom">Nom</label>
+        <input type="text" name="nom" id="form_nom" required readonly onsubmit="" value="<?php echo (isset($_POST["nom"]))?$_POST["nom"]:'';?>">
     </div>
     <div>
         <label for="form_cognoms">Cognoms</label>
@@ -41,16 +41,29 @@
     </div>
     <div>
         <label for="form_sexe">Sexe</label>
-        <input type="text" name="sexe" id="form_sexe" required>
+        <datalist id="sexe">
+            <option>Home</option>
+            <option>Dona</option>
+        </datalist>
+        <input type="text" name="sexe" id="form_sexe" list="sexe" required>
     </div>
     <div>
         <label for="form_civil">Estat Civil</label>
-        <input type="text" name="civil" id="form_civil" required>
+        <datalist id="civil">
+            <option>Casat</option>
+            <option>Solter</option>
+            <option>Vidu</option>
+            <option>Separat</option>
+            <option>Altres</option>
+        </datalist>
+        <input type="text" name="civil" id="form_civil" list="civil" required>
     </div>
-    <button type="submit">Entrar</button>
+    <button type="submit">RESUM</button>
+    <button type="button">INDEX</button>
 </form>
 
 </body>
+
 
 
 </html>
