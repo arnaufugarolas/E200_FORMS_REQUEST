@@ -13,7 +13,7 @@ if ((!isset($_GET["nom"]) or ($_GET["nom"] === '') or (preg_match('/[^a-zA-Z]/',
 </head>
 <body>
 
-<form id="index" name="form" method="GET" action="validar.php">
+<form class="p-5" id="index" name="form" method="GET" action="validar.php">
     <div class="col-md-6 input-group p-2">
         <label class="form-label input-group p-2" for="form_nom">Nom</label>
         <input class="form-control input-group p-2" type="text" name="nom" id="form_nom" required readonly value="<?php echo $_GET["nom"] ?? '';?>">
