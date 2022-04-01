@@ -26,7 +26,7 @@
             <?php echo $_GET["cognoms"] ?? '';?>
         </div>
     </div>
-    
+
     <div class="card">
         <div class="card-body" >
             <?php echo $_GET["nif"] ?? '';?>
@@ -38,7 +38,7 @@
             <?php echo $_GET["poblacio"] ?? '';?>
         </div>
     </div>
-    
+
     <div class="card">
         <div class="card-body" >
             <?php echo $_GET["codi_postal"] ?? '';?>
@@ -56,7 +56,7 @@
             <?php echo $_GET["data_naixament"] ?? '';?>
         </div>
     </div>
-    
+
     <div class="card">
         <div class="card-body" >
             <?php echo $_GET["email"] ?? '';?>
@@ -74,13 +74,13 @@
             <?php echo $_GET["sexe"] ?? '';?>
         </div>
     </div>
-    
+
     <div class="card">
         <div class="card-body" >
             <?php echo $_GET["civil"] ?? '';?>
         </div>
     </div>
-    
+
     <button type="submit">EDITAR</button>
 
     <?php if ($correcte) {
