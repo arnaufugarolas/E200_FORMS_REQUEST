@@ -14,7 +14,6 @@ if ((!isset($_GET["nom"]) or ($_GET["nom"] === '') or (preg_match('/[^a-zA-Z]/',
     <title>Index</title>
 </head>
 <body>
-
 <form class="p-5" id="index" name="form" method="GET" action="validar.php">
     <div class="col-md-6 input-group p-2">
         <label class="form-label input-group p-2" for="form_nom">Nom</label>
@@ -49,14 +48,14 @@ if ((!isset($_GET["nom"]) or ($_GET["nom"] === '') or (preg_match('/[^a-zA-Z]/',
         <input class="form-control" type="text" name="telefon" id="form_telefon" required value="<?php echo $_GET["telefon"] ?? '';?>">
     </div>
     <div class="col-md-6 input-group p-2">
-        <label for="form_sexe input-group">Sexe</label>
+        <label for="sexe" class="form-label input-group">Sexe</label>
         <select class="form-select" aria-label="Default select example"  id="sexe">
             <option>Home</option>
             <option>Dona</option>
         </select>
     </div>
     <div class="col-auto input-group p-2">
-        <label class="visually-hidden input-group" for="form_civil">Estat Civil</label>
+        <label class="input-group" for="form_civil">Estat Civil</label>
         <select class="form-select" aria-label="Default select example" id="civil">
             <option>Casat</option>
             <option>Solter</option>
