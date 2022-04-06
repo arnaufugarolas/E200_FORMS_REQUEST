@@ -12,7 +12,7 @@ if ((!isset($_GET["nom"]) or ($_GET["nom"] === '') or (preg_match('/[^a-zA-Z]/',
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Form</title>
 </head>
-<body style="overflow: hidden; margin-top: -2%">
+<body style="margin-top: -2%">
 <form class="p-5" id="index" name="form" method="GET" action="validar.php">
     <div class="col-md-6 input-group p-2">
         <label class="form-label input-group" for="form_nom">Nom</label>
